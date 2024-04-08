@@ -1,0 +1,176 @@
+h1{
+  color: hwb(0 0% 100%);
+  text-align: center;
+  font-family: "Archivo Black", monospace;
+  font-size: 40px;
+  font-weight: bold;
+}
+ 
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Lato", sans-serif;
+}
+.container{
+height: auto;
+max-width: 1200px;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+}
+
+.card{
+  height: 350px;
+  width: 300px;
+  margin: 10px;
+  transition: 300ms;
+  background-color: rgba(255, 255, 255, 0); /* Fondo totalmente transparente */
+  border: none; /* Eliminar cualquier borde */
+}
+.ciudad, .ciudad_2, .ciudad_3{
+height:350px ;
+width: 300px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 10%;
+background-color: rgb(217, 217, 240);
+transition: 300ms;
+position: absolute;
+}
+
+.btn {
+  width: 130px;
+  margin: auto;
+  
+  cursor: pointer;
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin-top: -10px; /*esta opcion es para subir o bajar el boton
+   Ajusta según la cantidad deseada */
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+.imagen_ciudad{
+  height: 200px;
+  width:300px;
+  background-image:url("imagen cine/cinesantiago.jpg") ;
+  background-size:cover ;
+  margin-bottom: auto;
+  transition: 300ms;
+  filter: drop-shadow(5px -4px 10px #000);
+}
+
+
+.imagen_ciudad_2{
+  height: 200px;
+  width:300px;
+  background-image:url("imagen cine/cinevina.jpg") ;
+  background-size:cover ;
+  margin-bottom: auto;
+  transition: 300ms;
+  filter: drop-shadow(5px -4px 10px #000);
+}
+
+
+.imagen_ciudad_3{
+  height: 200px;
+  width:300px;
+  background-image:url("imagen cine/cinevalpo.jpg") ;
+  background-size:cover ;
+  margin-bottom: auto;
+  transition: 300ms;
+  filter: drop-shadow(5px -4px 10px #000);
+}
+
+.detalle, .detalle_2, .detalle_3{
+height: 200px;
+width: 300px;
+background-color: white;
+position: absolute;
+border-bottom-left-radius:10%;
+border-bottom-right-radius: 10%;
+margin-top: 150px;
+z-index: 2;
+display: grid;
+grid-template-rows: 1fr 1fr 1fr;
+transition: 300ms; 
+
+}
+p, h2 {
+  text-align: center;
+  margin-top: 20px; /* Ajusta según la posición deseada */
+}
+/* --------------------------------------------------------------------------------- */
+/* ahora vamos a ver el */
+
+.modal-toggle {
+  display: none;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-toggle:checked + .modal {
+  display: block;
+}
+
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 5px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
