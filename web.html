@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cine es Duoc </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="web.html">cine de Duoc uc </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="web.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Cartelera.html">Cartelera</a>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Promociones.html">Promociones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Confiteria.html">Confiteria </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Producto
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="cine.html">Cine del Peliculas</a></li>
+                
+                <hr>
+                <li><a class="dropdown-item" href="#">Anime </a></li>
+                <li><hr class="dropdown-divider"></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container my-5">
+      <h1>¡hola Cine es mundos !</h1>
+      <div class="col-lg-8 px-0">
+       
+        <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="img_cine/One-Piece-Film-Red-3.jpg" style="width:100%">
+          <div class="text">Caption Text</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="img_cine/dragon-ball-super-broly_w5va.jpg" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="img_cine/hero00.jpg" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">4/ 4</div>
+            <img src="img_cine/castillo vagabundo cine.png" style="width:100%">
+            <div class="text">Caption Three</div>
+          </div>
+        
+        
+        </div>
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span>
+          <span class="dot"></span> 
+        </div>
+
+        <script>
+          let slideIndex = 0;
+          showSlides();
+          
+          function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+          }
+          </script>
+
+
+
+        <a href="https://www3.animeflv.net/" class="btn btn-primary">ver anime </a>
+        <a href="https://www3.animeflv.net/browse?type%5B%5D=movie&order=default" class="btn btn-primary">ver peliculas Online</a>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
