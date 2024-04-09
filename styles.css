@@ -87,5 +87,5 @@
   #grad1 {
     height: 200px;
     background-color: red; /* For browsers that do not support gradients */
-    background-image: linear-gradient(rgb(39, 39, 39), rgb(226, 7, 7));
+    background-image: linear-gradient(rgb(29, 29, 29), rgb(226, 7, 7));
   }
