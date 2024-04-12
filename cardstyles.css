@@ -7,7 +7,7 @@ body{
         width: 300px;
         margin: 10px;
         transition: 300ms;
-        background-color: rgba(255, 255, 255, 0); /* Fondo totalmente transparente */
+        background-color: rgb(255, 255, 255); /* Fondo totalmente transparente */
         border: none; /* Eliminar cualquier borde */
   }
   
@@ -32,6 +32,33 @@ body{
     opacity: 0.7;
   }
 
+  .carta{
+    height: 520px ;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    background-color: rgb(217, 217, 240);
+    transition: 300ms;
+    position: absolute;
+    }
+
+    .detalle{
+        height: 400px;
+        width: 300px;
+        background-color: white;
+        position: absolute;
+        border-bottom-left-radius:10%;
+        border-bottom-right-radius: 10%;
+        margin-top: 190px;
+        z-index: 2;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        transition: 300ms; 
+        }
+
+
   .tablacentroblanco{
     background-color: white;
     text-align: center;
@@ -43,6 +70,7 @@ body{
   display: table;
   border-collapse: collapse
 }
+
 
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
