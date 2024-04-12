@@ -32,7 +32,6 @@ body{
     opacity: 0.7;
   }
 
-
   .tablacentroblanco{
     background-color: white;
     text-align: center;
@@ -45,3 +44,17 @@ body{
   border-collapse: collapse
 }
 
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  }
+
+  #grad1 {
+    height: 40px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(rgb(36, 34, 34), rgb(226, 7, 7));
+  }
