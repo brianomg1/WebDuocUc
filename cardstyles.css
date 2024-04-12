@@ -1,10 +1,10 @@
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    padding :0%;
-    margin: auto;
-    text-align: center;
-    font-family: arial;
+        height: 350px;
+        width: 300px;
+        margin: 10px;
+        transition: 300ms;
+        background-color: rgba(255, 255, 255, 0); /* Fondo totalmente transparente */
+        border: none; /* Eliminar cualquier borde */
   }
   
   .price {
