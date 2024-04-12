@@ -3,63 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cine de Duoc Uc Peliculas</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<div class="container">
-			  <a class="navbar-brand" href="web.html">cine de Duoc uc </a>
-			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			  </button>
-			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-				  <li class="nav-item">
-					<a class="nav-link active" aria-current="page" href="web.html">Inicio</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link active" aria-current="page" href="Cartelera.html">Cartelera</a>
-				  <li class="nav-item">
-					<a class="nav-link active" aria-current="page" href="comida.html">Confiteria </a>
-				  </li>
-				  <li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-					  Producto
-					</a>
-					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-					  <li><a class="dropdown-item" href="cine.html">Cine del Peliculas</a></li>
-					  
-					  <hr>
-					  <li><a class="dropdown-item" href="#">Anime </a></li>
-					  <li><hr class="dropdown-divider"></li>
-					</ul>
-				  </li>
-				  <li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-					  Promociones
-					</a>
-					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-					  <li><a class="dropdown-item" href="ubicacion.html">ubicacion</a></li>
-					  
-					</ul>
-				  </li>
-				</ul>
-				<form class="d-flex" role="search">
-				  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-				  <button class="btn btn-outline-success" type="submit">buscar</button>
-				</form>
+    <header>
+        <nav>
+			<div class="topnav" id="myTopnav">
+				<a href="#home" class="active">Home</a>
+				<a href="#news">News</a>
+				<a href="#contact">Contact</a>
+				<div class="dropdown">
+				  <button class="dropbtn">Dropdown
+					<i class="fa fa-caret-down"></i>
+				  </button>
+				  <div class="dropdown-content">
+					<a href="#">Link 1</a>
+					<a href="#">Link 2</a>
+					<a href="#">Link 3</a>
+				  </div>
+				</div>
+				<a href="#about">About</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 			  </div>
-			</div>
-		  </nav>
-		  <div id="grad1"></div>
+        </nav>
+    </header>
 
     <!-- carousel -->
     <div class="carousel">
         <!-- listA item -->
         <div class="list">
             <div class="item">
-                <img src="img/thumb-1920-1345576.jpg">
+                <img src="image/img1.jpg">
                 <div class="content">
                     <div class="author">LUNDEV</div>
                     <div class="title">DESIGN SLIDER</div>
@@ -173,8 +148,6 @@
         <div class="time"></div>
     </div>
 
-
-	
     <script src="anime.js"></script>
 </body>
 </html>
