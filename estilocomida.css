@@ -70,9 +70,9 @@ body{
 }
 .card{
   height: 350px;
-  width: 200px;
+  width: 300px;
   margin: 10px;
-  transition: 300ms;
+  transition: 30ms;
   background-color: rgba(255, 255, 255, 0); /* Fondo totalmente transparente */
   border: none; /* Eliminar cualquier borde */
 }
