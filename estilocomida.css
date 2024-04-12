@@ -28,7 +28,7 @@ body{
 
 .btn {
   width: 130px;
-  margin: auto;
+  margin: 10;
   cursor: pointer;
   background: #3498db;
   background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
