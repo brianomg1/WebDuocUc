@@ -44,21 +44,6 @@ body{
     position: absolute;
     }
 
-    .detalle{
-        height: 400px;
-        width: 300px;
-        background-color: white;
-        position: absolute;
-        border-bottom-left-radius:10%;
-        border-bottom-right-radius: 10%;
-        margin-top: 190px;
-        z-index: 2;
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        transition: 300ms; 
-        }
-
-
   .tablacentroblanco{
     background-color: white;
     text-align: center;
