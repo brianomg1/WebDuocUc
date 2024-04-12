@@ -85,7 +85,7 @@ body{
   border-radius: 10%;
   background-color: rgb(217, 217, 240);
   transition: 300ms;
-  position: 300px;
+  position: relative;
   }
   .detalle{
     height: 400px;
