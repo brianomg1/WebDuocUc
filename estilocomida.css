@@ -91,7 +91,7 @@ body{
     height: 400px;
     width: 300px;
     background-color: white;
-    position: fixed;
+    position: absolute;
     border-bottom-left-radius:10%;
     border-bottom-right-radius: 10%;
     margin-top: 190px;
