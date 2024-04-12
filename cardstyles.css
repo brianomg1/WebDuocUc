@@ -2,8 +2,8 @@
 .card {
         height: 350px;
         width: 300px;
-        margin: 10px;
-        transition: 30ms;
+        margin: 0px;
+        transition: 300ms;
         background-color: rgb(255, 255, 255); /* Fondo totalmente transparente */
         border: none; /* Eliminar cualquier borde */
   }
