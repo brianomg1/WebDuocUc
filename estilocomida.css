@@ -60,8 +60,8 @@ body{
 
 .imagen{
 
-  height: 200px;
-  width:200px;
+  height: 20px;
+  width:300px;
   background-image:url("imagen cine/pollo.jpg") ;
   background-size:cover ;
   margin-bottom: auto;
