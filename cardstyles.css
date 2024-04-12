@@ -28,4 +28,14 @@
   }
 
 
-  
+  .tablacentroblanco{
+    background-color: white;
+    text-align: center;
+    margin: 0 auto 250px; /* Establece el margen izquierdo y derecho a "auto", lo que centra la tabla horizontalmente */
+    display: table-cell;
+  border: 0px solid; /* Borde para visualizar la tabla, puedes eliminar esta línea si no deseas bordes */
+  padding: 5px;
+  background-color: transparent; /* Fondo transparente */
+  display: table;
+  border-collapse: collapse
+}
