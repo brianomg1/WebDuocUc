@@ -1,12 +1,12 @@
 
 .card {
-        height: 350px;
-        width: 300px;
-        margin: 0px;
-        transition: 300ms;
-        background-color: rgb(255, 255, 255); /* Fondo totalmente transparente */
-        border: none; /* Eliminar cualquier borde */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 10px;
+    text-align: center;
+    font-family: arial;
   }
+  
   
   .price {
     color: grey;
