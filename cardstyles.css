@@ -2,13 +2,12 @@ body{
     background-image: url('imagen cine/fondo comida.jpg');
   }
 
-.card {
-        height: 350px;
-        width: 300px;
-        margin: 10px;
-        transition: 300ms;
-        background-color: rgb(255, 255, 255); /* Fondo totalmente transparente */
-        border: none; /* Eliminar cualquier borde */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
   }
   
   .price {
@@ -31,18 +30,6 @@ body{
   .card button:hover {
     opacity: 0.7;
   }
-
-  .tablacentroblanco{
-    background-color: white;
-    text-align: center;
-    margin: 0 auto 250px; /* Establece el margen izquierdo y derecho a "auto", lo que centra la tabla horizontalmente */
-    display: table-cell;
-  border: 0px solid; /* Borde para visualizar la tabla, puedes eliminar esta línea si no deseas bordes */
-  padding: 5px;
-  background-color: transparent; /* Fondo transparente */
-  display: table;
-  border-collapse: collapse
-}
 
 
 
