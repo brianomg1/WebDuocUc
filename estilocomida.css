@@ -1,34 +1,32 @@
-body{
-    background-image: url('imagen cine/fondo comida.jpg');
-  }
+body {
+  background-image: url('imagen cine/fondo comida.jpg');
+}
 
-  h1{
-    color: hwb(0 0% 100%);
-    text-align: center;
-    font-family: "Archivo Black", monospace;
-    font-size: 40px;
-    font-weight: bold;
-    margin-top: 30px;
-    position: relative; /* Para que el pseudo-elemento se posicione correctamente */
-    
-  }
+h1 {
+  color: hwb(0 0% 100%);
+  text-align: center;
+  font-family: "Archivo Black", monospace;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 30px;
+  position: relative;
+  /* Para que el pseudo-elemento se posicione correctamente */
 
-  .tablacentroblanco{
-    background-color: white;
-    text-align: center;
-    margin: 0 auto 250px; /* Establece el margen izquierdo y derecho a "auto", lo que centra la tabla horizontalmente */
-    display: table-cell;
-  border: 0px solid; /* Borde para visualizar la tabla, puedes eliminar esta línea si no deseas bordes */
-  padding: 5px;
-  background-color: transparent; /* Fondo transparente */
-  display: table;
-  border-collapse: collapse
 }
 
 
+p{ line-height: 0;
+  text-align: left;
+  margin-left: 40px;
+  margin-right: auto;
+  
+}
+
+
+
 .btn {
-  width: 130px;
-  margin: auto;
+  width: 120px;
+  margin: 20px auto 10px; /* Ajusta el margen superior a 20px para subir el botón */
   cursor: pointer;
   background: #3498db;
   background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
@@ -41,10 +39,11 @@ body{
   border-radius: 25px;
   font-family: Arial;
   color: #ffffff;
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
+  font-size: 16px; /* Reduciendo el tamaño del texto para ajustarse al botón más pequeño 
+  padding: 6px 20px; /* Reduciendo el padding para achicar la altura del botón */
   text-decoration: none;
-  margin-top: -10px; /*esta opcion es para subir o bajar el boton
+  margin-top: 10px;
+  /*esta opcion es para subir o bajar el boton
    Ajusta según la cantidad deseada */
 }
 
@@ -58,26 +57,44 @@ body{
   text-decoration: none;
 }
 
-.imagen{
+.imagen {
 
   height: 200px;
-  width:300px;
-  background-image:url("imagen cine/pollo.jpg") ;
-  background-size:cover ;
+  width: 300px;
+  background-image: url("imagen cine/pollo.jpg");
+  background-size: cover;
   margin-bottom: auto;
   transition: 300ms;
   filter: drop-shadow(5px -4px 10px #000);
 }
-.card{
+
+.card {
   height: 350px;
   width: 300px;
   margin: 10px;
   transition: 300ms;
-  background-color: rgba(255, 255, 255, 0); /* Fondo totalmente transparente */
-  border: none; /* Eliminar cualquier borde */
+  background-color: rgba(255, 255, 255, 0);
+  /* Fondo totalmente transparente */
+  border: none;
+  /* Eliminar cualquier borde */
 }
-.carta{
-  height: 520px ;
+
+.detalle {
+  height: 400px;
+  width: 300px;
+  background-color: white;
+  position: absolute;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  margin-top: 190px;
+  z-index: 2;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  transition: 300ms;
+}
+
+.carta {
+  height: 520px;
   width: 300px;
   display: flex;
   justify-content: center;
@@ -86,48 +103,59 @@ body{
   background-color: rgb(217, 217, 240);
   transition: 300ms;
   position: absolute;
-  }
-  .detalle{
-    height: 400px;
-    width: 300px;
-    background-color: white;
-    position: absolute;
-    border-bottom-left-radius:10%;
-    border-bottom-right-radius: 10%;
-    margin-top: 190px;
-    z-index: 2;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    transition: 300ms; 
-    }
-    .container{
-      height: auto;
-      max-width: 1200px;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      }
-      .card{
-        height: 350px;
-        width: 300px;
-        margin: 10px;
-        transition: 300ms;
-        background-color: rgba(255, 255, 255, 0); /* Fondo totalmente transparente */
-        border: none; /* Eliminar cualquier borde */
-      }
-      
+}
 
-      @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-      *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Lato", sans-serif;
-        }
 
-        #grad1 {
-          height: 40px;
-          background-color: red; /* For browsers that do not support gradients */
-          background-image: linear-gradient(rgb(36, 34, 34), rgb(226, 7, 7));
-        }
+.tablacentroblanco {
+  background-color: white;
+  text-align: center;
+  margin: 0 auto 50px; /* Reducir el margen inferior a 50px o al valor deseado */
+  /* Establece el margen izquierdo y derecho a "auto", lo que centra la tabla horizontalmente */
+  display: table-cell;
+  border: 0px solid;
+  /* Borde para visualizar la tabla, puedes eliminar esta línea si no deseas bordes */
+  padding: 5px;
+  background-color: transparent;
+  /* Fondo transparente */
+  display: table;
+  border-collapse: collapse
+}
+
+.container {
+  height: auto;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  height: 350px;
+  width: 300px;
+  margin: 10px;
+  transition: 300ms;
+  background-color: rgba(255, 255, 255, 0);
+  /* Fondo totalmente transparente */
+  border: none;
+  /* Eliminar cualquier borde */
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+#grad1 {
+  height: 40px;
+  background-color: red;
+  /* For browsers that do not support gradients */
+  background-image: linear-gradient(rgb(36, 34, 34), rgb(226, 7, 7));
+}

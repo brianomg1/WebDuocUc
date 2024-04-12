@@ -9,44 +9,33 @@
 <body>
     <header>
         <nav>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-				  <li class="nav-item">
-					<a class="nav-link active" aria-current="page" href="web.html">Inicio</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link active" aria-current="page" href="Cartelera.html">Cartelera</a>
-				  <li class="nav-item">
-					<a class="nav-link active" aria-current="page" href="comida.html">Confiteria </a>
-				  </li>
-				  <li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-					  Producto
-					</a>
-					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-					  <li><a class="dropdown-item" href="cine.html">Cine del Peliculas</a></li>
-					  
-					  <hr>
-					  <li><a class="dropdown-item" href="#">Anime </a></li>
-					  <li><hr class="dropdown-divider"></li>
-					</ul>
-				  </li>
-				  <li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-					  Promociones
-					</a>
-					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-					  <li><a class="dropdown-item" href="ubicacion.html">ubicacion</a></li>
-					  
-					</ul>
-				  </li>
-				</ul>
-				<form class="d-flex" role="search">
-				  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-				  <button class="btn btn-outline-success" type="submit">buscar</button>
-				</form>
+			<div class="topnav" id="myTopnav">
+				<a class="navbar-brand" href="web.html">cine de Duoc uc </a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<a class="nav-link active" aria-current="page" href="web.html">Inicio</a>
+				<a class="nav-link active" aria-current="page" href="Cartelera.html">Cartelera</a>
+				<div class="dropdown">
+					<button class="dropbtn">Promociones
+					  <i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a class="dropdown-item" href="ubicacion.html">ubicacion</a>
+					</div>
+				  </div>
+				<div class="dropdown">
+				  <button class="dropbtn">Producto
+					<i class="fa fa-caret-down"></i>
+				  </button>
+				  <div class="dropdown-content">
+					<a class="dropdown-item" href="cine.html">Cine del Peliculas</a>
+					<a class="dropdown-item" href="anim_manga.html">Anime </a>
+				  </div>
+				</div>
+				<a href="#about">About</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 			  </div>
-			</div>
         </nav>
     </header>
 
