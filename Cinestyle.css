@@ -109,3 +109,14 @@ a{
   color: #fff;
   text-shadow: 0 5px 10px #0004;
 }
+
+.carousel .list .item .author{
+  font-weight: bold;
+  letter-spacing: 10px;
+}
+.carousel .list .item .title,
+.carousel .list .item .topic{
+  font-size: 5em;
+  font-weight: bold;
+  line-height: 1.3em;
+}
