@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+body{
+  margin: 0;
+  background-color: #000;
+  color: #eee;
+  font-family: Poppins;
+  font-size: 12px;
+}
+
+
 /* Navbar container */
 .navbar {
   overflow: hidden;
@@ -68,4 +77,8 @@
 /* Mostrar el menú desplegable al pasar el mouse */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+a{
+  text-decoration: none;
 }
