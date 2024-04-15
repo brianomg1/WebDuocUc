@@ -92,3 +92,7 @@
         background-image: linear-gradient(rgb(36, 34, 34), rgb(226, 7, 7));
       }
 
+
+      img{
+        max-width: 390px;
+      }
