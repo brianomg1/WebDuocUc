@@ -41,17 +41,17 @@ header a{
   }
   
 /* Cambiar el color de los enlaces al pasar el mouse */
-  .topnav , a.split a:hover {
+  .topnav ,  a:hover {
 	background-color: #ddd;
 	color: black;
   }
   
-/* Crea un enlace alineado a la derecha (dividido) dentro de la barra de navegación
+/* Crea un enlace alineado a la derecha (dividido) dentro de la barra de navegación */
 
-  .topnav a.split {
+  .topnav a.split ,a:hover{
 	float: right;
-	background-color: #04aa6d23;
+	background-color: #04aa6d00;
 	color: white;
   } 
-  */
+  
   
