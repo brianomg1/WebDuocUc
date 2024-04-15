@@ -48,7 +48,7 @@ header a{
   
 /* Crea un enlace alineado a la derecha (dividido) dentro de la barra de navegación */
 
-  .topnav a.split ,a:hover{
+  .topnav a.split {
 	float: right;
 	background-color: #04aa6d00;
 	color: white;
