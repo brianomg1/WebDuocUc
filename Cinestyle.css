@@ -37,7 +37,7 @@
 
 /* Agrega un color de fondo rojo a los enlaces de la barra de navegación al pasar el mouse */
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: rgba(255, 0, 0, 0);
+  background-color: rgba(27, 32, 32, 0.993);
 }
 
 /* Contenido desplegable (oculto por defecto) */
