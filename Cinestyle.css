@@ -46,10 +46,4 @@ header a{
 	color: black;
   }
   
-  /* Create a right-aligned (split) link inside the navigation bar */
-  .topnav a.split {
-	float: right;
-	background-color: #04aa6d00;
-	color: white;
-  }
-  
+ 
