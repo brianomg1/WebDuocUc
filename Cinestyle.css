@@ -93,7 +93,3 @@ header{
   position: relative;
   z-index: 100;
 }
-header a{
-  color: #eee;
-  margin-right: 40px;
-}
