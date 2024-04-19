@@ -43,3 +43,13 @@ header a{
   height: 100%;
   object-fit: cover;
 }
+
+.carousel .list .item .content{
+  
+  left: 50%;
+  transform: translateX(-50%);
+  padding-right: 30%;
+  box-sizing: border-box;
+  color: #fff;
+  text-shadow: 0 5px 10px #0004;
+}
