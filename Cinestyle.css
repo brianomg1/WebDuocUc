@@ -163,3 +163,12 @@ header a{
   background-color: #fff;
   color: #000;
 }
+
+.carousel .list .item:nth-child(1) .content .author
+
+{
+  transform: translateY(50px);
+  filter: blur(20px);
+  opacity: 0;
+  animation: showContent .5s 1s linear 1 forwards;
+}
