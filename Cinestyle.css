@@ -7,23 +7,22 @@ body{
   font-size: 12px;
 }
 a{
-    text-decoration: none;
+  text-decoration: none;
 }
 header{
-    width: 1140px;
-    max-width: 80%;
-    margin: auto;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    z-index: 100;
+  width: 1140px;
+  max-width: 80%;
+  margin: auto;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 100;
 }
 header a{
-    color: #eee;
-    margin-right: 40px;
+  color: #eee;
+  margin-right: 40px;
 }
-
 .carousel{
   height: 100vh;
   margin-top: -50px;
@@ -31,7 +30,6 @@ header a{
   overflow: hidden;
   position: relative;
 }
-
 .carousel .list .item{
   width: 100%;
   height: 100%;
@@ -43,7 +41,6 @@ header a{
   height: 100%;
   object-fit: cover;
 }
-
 .carousel .list .item .content{
   position: absolute;
   top: 20%;
@@ -56,7 +53,6 @@ header a{
   color: #fff;
   text-shadow: 0 5px 10px #0004;
 }
-
 .carousel .list .item .author{
   font-weight: bold;
   letter-spacing: 10px;
@@ -67,12 +63,9 @@ header a{
   font-weight: bold;
   line-height: 1.3em;
 }
-
 .carousel .list .item .topic{
-  color: #3af1c9;
+  color: #3af1f1;
 }
-
-
 .carousel .list .item .buttons{
   display: grid;
   grid-template-columns: repeat(2, 130px);
@@ -80,7 +73,6 @@ header a{
   gap: 5px;
   margin-top: 20px;
 }
-
 .carousel .list .item .buttons button{
   border: none;
   background-color: #eee;
@@ -88,14 +80,11 @@ header a{
   font-family: Poppins;
   font-weight: 500;
 }
-
 .carousel .list .item .buttons button:nth-child(2){
   background-color: transparent;
   border: 1px solid #fff;
   color: #eee;
 }
-
-
 .thumbnail{
   position: absolute;
   bottom: 50px;
@@ -105,21 +94,18 @@ header a{
   display: flex;
   gap: 20px;
 }
-
 .thumbnail .item{
   width: 150px;
   height: 220px;
   flex-shrink: 0;
   position: relative;
 }
-
 .thumbnail .item img{
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
 }
-
 .thumbnail .item .content{
   color: #fff;
   position: absolute;
@@ -127,14 +113,12 @@ header a{
   left: 10px;
   right: 10px;
 }
-
 .thumbnail .item .content .title{
   font-weight: 500;
 }
 .thumbnail .item .content .description{
   font-weight: 300;
 }
-
 .arrows{
   position: absolute;
   top: 80%;
@@ -146,7 +130,6 @@ header a{
   gap: 10px;
   align-items: center;
 }
-
 .arrows button{
   width: 40px;
   height: 40px;
@@ -158,11 +141,15 @@ header a{
   font-weight: bold;
   transition: .5s;
 }
-
 .arrows button:hover{
   background-color: #fff;
   color: #000;
 }
+
+.carousel .list .item:nth-child(1){
+  z-index: 1;
+}
+
 
 .carousel .list .item:nth-child(1) .content .author,
 .carousel .list .item:nth-child(1) .content .title,
@@ -175,7 +162,6 @@ header a{
   opacity: 0;
   animation: showContent .5s 1s linear 1 forwards;
 }
-
 @keyframes showContent{
   to{
       transform: translateY(0px);
@@ -184,9 +170,8 @@ header a{
   }
 }
 .carousel .list .item:nth-child(1) .content .title{
-    animation-delay: 1.2s!important;
+  animation-delay: 1.2s!important;
 }
-
 .carousel .list .item:nth-child(1) .content .topic{
   animation-delay: 1.4s!important;
 }
@@ -196,7 +181,6 @@ header a{
 .carousel .list .item:nth-child(1) .content .buttons{
   animation-delay: 1.8s!important;
 }
-
 .carousel.next .list .item:nth-child(1) img{
   width: 150px;
   height: 220px;
@@ -206,7 +190,6 @@ header a{
   border-radius: 30px;
   animation: showImage .5s linear 1 forwards;
 }
-
 @keyframes showImage{
   to{
       bottom: 0;
@@ -230,7 +213,6 @@ header a{
       opacity: 0;
   }
 }
-
 .carousel.next .thumbnail{
   animation: effectNext .5s linear 1 forwards;
 }
@@ -241,14 +223,13 @@ header a{
   }
 }
 
-/* running time */
 
 .carousel .time{
   position: absolute;
   z-index: 1000;
   width: 0%;
   height: 3px;
-  background-color: #f1683a;
+  background-color: #3af1f1;
   left: 0;
   top: 0;
 }
