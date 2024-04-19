@@ -172,3 +172,11 @@ header a{
   opacity: 0;
   animation: showContent .5s 1s linear 1 forwards;
 }
+
+@keyframes showContent{
+  to{
+      transform: translateY(0px);
+      filter: blur(0px);
+      opacity: 1;
+  }
+}
