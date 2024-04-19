@@ -127,3 +127,10 @@ header a{
   left: 10px;
   right: 10px;
 }
+
+.thumbnail .item .content .title{
+  font-weight: 500;
+}
+.thumbnail .item .content .description{
+  font-weight: 300;
+}
