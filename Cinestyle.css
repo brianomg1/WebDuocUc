@@ -164,8 +164,11 @@ header a{
   color: #000;
 }
 
-.carousel .list .item:nth-child(1) .content .author
-
+.carousel .list .item:nth-child(1) .content .author,
+.carousel .list .item:nth-child(1) .content .title,
+.carousel .list .item:nth-child(1) .content .topic,
+.carousel .list .item:nth-child(1) .content .des,
+.carousel .list .item:nth-child(1) .content .buttons
 {
   transform: translateY(50px);
   filter: blur(20px);
