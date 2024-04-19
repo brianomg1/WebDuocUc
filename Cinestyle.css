@@ -183,3 +183,6 @@ header a{
       opacity: 1;
   }
 }
+.carousel .list .item:nth-child(1) .content .title{
+    animation-delay: 1.2s!important;
+}
