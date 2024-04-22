@@ -31,8 +31,8 @@ function showSlider(type){
         thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
         carouselDom.classList.add('next');
     }else{
-        SliderDom.prepend(SliderItemsDom[SliderItemsDom.length - 0]);
-        thumbnailBorderDom.prepend(thumbnailItemsDom[thumbnailItemsDom.length - 0]);
+        SliderDom.prepend(SliderItemsDom[SliderItemsDom.length - 1]);
+        thumbnailBorderDom.prepend(thumbnailItemsDom[thumbnailItemsDom.length - 1]);
         carouselDom.classList.add('prev');
     }
     clearTimeout(runTimeOut);
