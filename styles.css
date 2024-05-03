@@ -96,3 +96,11 @@
       img{
         max-width: 800px;
       }
+
+      footer {
+        background-color: #343a40;
+        color: #fff;
+        text-align: center;
+        padding: 300px;
+    }
+    
