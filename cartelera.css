@@ -41,4 +41,6 @@ transition:  .40s ease all;
  bottom: 0;
  width: 100%;
  display: flex;
+ gap: 15px;
+ padding: 10px;
 }
