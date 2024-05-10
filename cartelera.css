@@ -41,7 +41,7 @@ transition:  .40s ease all;
   bottom: 0;
   width: 100%;
   background: #343a40;
-  display: flex;
+  
   justify-content: center;
   padding: auto;
   gap: 35px;
