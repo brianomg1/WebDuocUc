@@ -38,7 +38,9 @@ transition:  .40s ease all;
 }
 
 .paginaciones{
-  position: fixed;
+  bottom: 0;
+  width: 150%;
+  background: #343a40;
   display: flex;
   justify-content: center;
   padding: auto;
