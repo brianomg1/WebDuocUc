@@ -51,6 +51,6 @@ transition:  .40s ease all;
 .contenedor{
 
   width: 90%;
-  
+  max-width: 100%;
 
 }
