@@ -45,10 +45,10 @@ let pagina = 1;
                 console.log('un error no sabia que paso?')
             }
 
-        } catch(error){
-            console.log(error);
-        }
-    
-    }
-    
-    cargarPeliculas();
+          } catch(error){
+		console.log(error);
+	}
+
+}
+
+cargarPeliculas();
