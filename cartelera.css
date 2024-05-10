@@ -14,3 +14,12 @@ footer {
     padding: 100px;
 }
 
+.paginaciones button{
+
+cursor: pointer;
+border: none;
+display: flex;
+align-items: center;
+
+
+}
