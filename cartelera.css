@@ -38,7 +38,9 @@ transition:  .40s ease all;
 }
 
 .paginaciones{
-
+  position: fixed;
+  display: flex;
+  justify-content: center;
   padding: auto;
   gap: 35px;
 }
