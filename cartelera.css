@@ -37,11 +37,3 @@ transition:  .40s ease all;
   background: red;
 }
 
-.paginaciones{
-  width: 100%;
-  background: #343a40;
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-  gap: 35px;
-}
