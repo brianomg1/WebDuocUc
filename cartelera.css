@@ -38,5 +38,5 @@ transition:  .40s ease all;
 }
 
 .paginaciones{
- position: fixed;
+ bottom: 0;
 }
