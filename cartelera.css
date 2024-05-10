@@ -44,4 +44,5 @@ transition:  .40s ease all;
  gap: 15px;
  padding: 10px;
  justify-content: center;
+ display: flex;
 }
