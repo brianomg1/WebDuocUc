@@ -20,6 +20,10 @@ cursor: pointer;
 border: none;
 display: flex;
 align-items: center;
-
+background: #343a40;
+color: #fff;
+justify-content: center;
+text-align: center;
+height: 20;
 
 }
