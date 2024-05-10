@@ -31,3 +31,8 @@ font-family:  sans-serif;
 font-weight: 400;
 transition: ease all;
 }
+
+.paginacion button:hover{
+
+  background: red;
+}
