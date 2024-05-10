@@ -32,7 +32,9 @@ font-weight: 400;
 transition: ease all;
 }
 
-.paginacion button:hover{
+.paginaciones button:hover{
 
   background: red;
 }
+
+.paginaciones
