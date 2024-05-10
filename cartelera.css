@@ -52,5 +52,6 @@ transition:  .40s ease all;
 
   width: 90%;
   max-width: 100%;
+  margin: 40px auto 100px auto;
 
 }
