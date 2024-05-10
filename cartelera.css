@@ -37,4 +37,7 @@ transition:  .40s ease all;
   background: red;
 }
 
-.paginaciones
+.paginaciones{
+
+  gap: 35px;
+}
