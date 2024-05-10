@@ -39,5 +39,6 @@ transition:  .40s ease all;
 
 .paginaciones{
 
+  padding: auto;
   gap: 35px;
 }
