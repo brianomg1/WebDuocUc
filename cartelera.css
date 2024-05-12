@@ -59,4 +59,9 @@ transition:  .40s ease all;
 
 }
 
-.contenedor.peliculas
+.contenedor.peliculas{
+
+  text-align: center;
+ 
+  
+}
