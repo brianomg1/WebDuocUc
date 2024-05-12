@@ -57,5 +57,6 @@ transition:  .40s ease all;
   grid-template-columns:repeat(3, 1fr) ;
   gap: 40px;
 
-
 }
+
+.contenedor.peliculas
