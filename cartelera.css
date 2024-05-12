@@ -1,4 +1,9 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 
+}
 
 #grad1 {
     height: 40px;
@@ -24,8 +29,8 @@ background: #596674;
 color: #fff;
 justify-content: center;
 text-align: center;
-height: 40px;
-width: 150px;
+height: 60px;
+width: 200px;
 border-radius: 95px;
 font-family:  sans-serif;
 font-weight: 400;
@@ -41,28 +46,26 @@ transition:  .40s ease all;
  bottom: 0;
  width: 100%;
  display: flex;
- gap: 15px;
+ gap: 20px;
  padding: 10px;
  justify-content: center;
  display: flex;
 }
 
 
-.contenedor{
-
-  width: 90%;
-  max-width: 100%;
+.contenedor {
+	width: 90%;
   margin: 40px auto 100px auto;
+	max-width: 1000px;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 40px;
   display: grid;
-  grid-template-columns:repeat(3, 1fr) ;
-  gap: 40px;
-
 }
 
-.contenedor .peliculas{
 
-  text-align: center; 
-  
+
+.contenedor .peliculas {
+	text-align: center;
 }
 
 .contenedor .peliculas .titulo{
@@ -71,4 +74,18 @@ transition:  .40s ease all;
 font-size: 16px;
 font-weight: 600;
 
+}
+
+
+.contenedor .peliculas .poster {
+
+width: 100;
+margin-bottom: 10px;
+border-radius: 20px;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: #e0e0e0;
+	color: #1d1d1d;
 }
