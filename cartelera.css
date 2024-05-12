@@ -59,9 +59,16 @@ transition:  .40s ease all;
 
 }
 
-.contenedor.peliculas{
+.contenedor .peliculas{
 
-  text-align: center;
- 
+  text-align: center; 
   
+}
+
+.contenedor .peliculas .titulo{
+
+
+font-size: 16px;
+font-weight: 600;
+
 }
