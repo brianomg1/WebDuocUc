@@ -50,3 +50,15 @@ body {
 	margin-bottom: 10px;
 	border-radius: 15px;
 }
+
+
+.paginacion {
+	position: fixed;
+	bottom: 0;
+	background: #100a1f;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 10px;
+}
