@@ -1,6 +1,6 @@
 let pagina = 1;
-const Anterior = document.getElementById('Anterior');
-const Siguiente = document.getElementById('Siguiente');
+const btnAnterior = document.getElementById('Anterior');
+const btnSiguiente = document.getElementById('Siguiente');
 
 Siguiente.addEventListener('click', () => {
 	if(pagina < 1000){
