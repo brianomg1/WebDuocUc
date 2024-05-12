@@ -1,15 +1,15 @@
 let pagina = 1;
-const btnAnterior = document.getElementById('btnAnterior');
-const btnSiguiente = document.getElementById('btnSiguiente');
+const Anterior = document.getElementById('Anterior');
+const Siguiente = document.getElementById('Siguiente');
 
-btnSiguiente.addEventListener('click', () => {
+Siguiente.addEventListener('click', () => {
 	if(pagina < 1000){
 		pagina += 1;
 		cargarPeliculas();
 	}
 });
 
-btnAnterior.addEventListener('click', () => {
+Anterior.addEventListener('click', () => {
 	if(pagina > 1){
 		pagina -= 1;
 		cargarPeliculas();
@@ -28,7 +28,7 @@ const cargarPeliculas = async() => {
 			let peliculas = '';
 			datos.results.forEach(pelicula => {
 				peliculas += `
-					<div class="pelicula">
+					<div class="peliculas">
 						<img class="poster" src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}">
 						<h3 class="titulo">${pelicula.title}</h3>
 					</div>
@@ -38,11 +38,11 @@ const cargarPeliculas = async() => {
 			document.getElementById('contenedor').innerHTML = peliculas;
 
 		} else if(respuesta.status === 401){
-			console.log('Pusiste la llave mal');
+			console.log('llave mal');
 		} else if(respuesta.status === 404){
-			console.log('La pelicula que buscas no existe');
+			console.log('La pelicula no tengo buscar vacio');
 		} else {
-			console.log('Hubo un error y no sabemos que paso');
+			console.log('error que no sabia  que paso?');
 		}
 
 	} catch(error){
