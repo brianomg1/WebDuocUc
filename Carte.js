@@ -22,7 +22,6 @@ const cargarPeliculas = async() => {
 	
 		console.log(respuesta);
 
-		// Si la respuesta es correcta
 		if(respuesta.status === 200){
 			const datos = await respuesta.json();
 			
