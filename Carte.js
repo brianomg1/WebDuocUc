@@ -1,15 +1,15 @@
 let pagina = 1;
-const btnAnterior = document.getElementById('Anterior');
-const btnSiguiente = document.getElementById('Siguiente');
+const btnAnterior = document.getElementById('btnAnterior');
+const btnSiguiente = document.getElementById('btnSiguiente');
 
-Siguiente.addEventListener('click', () => {
+btnSiguiente.addEventListener('click', () => {
 	if(pagina < 1000){
 		pagina += 1;
 		cargarPeliculas();
 	}
 });
 
-Anterior.addEventListener('click', () => {
+btnAnterior.addEventListener('click', () => {
 	if(pagina > 1){
 		pagina -= 1;
 		cargarPeliculas();
@@ -22,27 +22,28 @@ const cargarPeliculas = async() => {
 	
 		console.log(respuesta);
 
+		// Si la respuesta es correcta
 		if(respuesta.status === 200){
 			const datos = await respuesta.json();
 			
 			let peliculas = '';
-			datos.results.forEach(peliculas => {
+			datos.results.forEach(pelicula => {
 				peliculas += `
-					<div class="peliculas">
-						<img class="Poster" src="https://image.tmdb.org/t/p/w500/${peliculas.poster_path}">
-						<h3 class="titulo">${peliculas.title}</h3>
+					<div class="pelicula">
+						<img class="poster" src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}">
+						<h3 class="titulo">${pelicula.title}</h3>
 					</div>
 				`;
 			});
 
-			document.getElementById('Contenedor').innerHTML = peliculas;
+			document.getElementById('contenedor').innerHTML = peliculas;
 
 		} else if(respuesta.status === 401){
-			console.log('llave  muy mal');
+			console.log('Pusiste la llave mal');
 		} else if(respuesta.status === 404){
-			console.log('pelicula no tengo buscas vacio');
+			console.log('La pelicula que buscas no existe');
 		} else {
-			console.log(' no sabemos error que paso');
+			console.log('Hubo un error y no sabemos que paso');
 		}
 
 	} catch(error){
