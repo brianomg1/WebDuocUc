@@ -2,8 +2,8 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-
 }
+
 
 #grad1 {
     height: 40px;
@@ -19,73 +19,67 @@ footer {
     padding: 100px;
 }
 
-.paginaciones button{
-
-cursor: pointer;
-border: none;
-display: flex;
-align-items: center;
-background: #596674;
-color: #fff;
-justify-content: center;
-text-align: center;
-height: 60px;
-width: 200px;
-border-radius: 95px;
-font-family:  sans-serif;
-font-weight: 400;
-transition:  .40s ease all;
-}
-
-.paginaciones button:hover{
-
-  background: red;
-}
-
-.paginaciones{
- bottom: 0;
- width: 100%;
- display: flex;
- gap: 20px;
- padding: 10px;
- justify-content: center;
- display: flex;
-}
-
-
-.contenedor {
-	width: 90%;
-  margin: 40px auto 100px auto;
-	max-width: 1000px;
-	grid-template-columns: repeat(4, 1fr);
-	gap: 40px;
-  display: grid;
-}
-
-
-
-.contenedor .peliculas {
-	text-align: center;
-}
-
-.contenedor .peliculas .titulo{
-
-
-font-size: 16px;
-font-weight: 600;
-
-}
-
-
-.contenedor .peliculas .poster {
-
-width: 100;
-margin-bottom: 10px;
-border-radius: 20px;
-}
 
 body {
 	font-family: 'Montserrat', sans-serif;
 	background: #e0e0e0;
 	color: #1d1d1d;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 40px auto 100px auto;
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 40px;
+}
+
+.contenedor .pelicula {
+	text-align: center;
+}
+
+.contenedor .pelicula .titulo {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+
+.contenedor .pelicula .poster {
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 15px;
+}
+
+.paginacion {
+	position: fixed;
+	bottom: 0;
+	background: #100a1f;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 10px;
+}
+
+.paginacion button {
+	cursor: pointer;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	background: #241744;
+	color: #fff;
+	border-radius: 100px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	transition: .3s ease all;
+}
+
+.paginacion button:hover {
+	background: #137c32;
 }
