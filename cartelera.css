@@ -4,6 +4,22 @@
 	box-sizing: border-box;
 }
 
+
+#grad1 {
+    height: 40px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(rgb(36, 34, 34), rgb(226, 7, 7));
+  }
+
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 100px;
+}
+
+
 body {
 	font-family: 'Montserrat', sans-serif;
 	background: #e0e0e0;
