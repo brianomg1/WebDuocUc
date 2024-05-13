@@ -37,7 +37,7 @@ body {
 .paginacion {
 	position: fixed;
 	bottom: 0;
-	background: #100a1f;
+	background: #2f2c35;
 	width: 100%;
 	display: flex;
 	justify-content: center;
