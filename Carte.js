@@ -1,15 +1,15 @@
 let pagina = 1;
-const btnAnterior = document.getElementById('Anterior');
-const btnSiguiente = document.getElementById('Siguiente');
+const Anterior = document.getElementById('Anterior');
+const Siguiente = document.getElementById('Siguiente');
 
-btnSiguiente.addEventListener('click', () => {
+Siguiente.addEventListener('click', () => {
 	if(pagina < 1000){
 		pagina += 1;
 		cargarPeliculas();
 	}
 });
 
-btnAnterior.addEventListener('click', () => {
+Anterior.addEventListener('click', () => {
 	if(pagina > 1){
 		pagina -= 1;
 		cargarPeliculas();
