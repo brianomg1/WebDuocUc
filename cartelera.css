@@ -68,7 +68,7 @@ body {
 
 #grad1 {
 	height: 40px;
-	background-color: red; /* For browsers that do not support gradients */
+	background-color: red; 
 	background-image: linear-gradient(rgb(36, 34, 34), rgb(226, 7, 7));
   }
 
