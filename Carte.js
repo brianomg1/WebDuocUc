@@ -40,9 +40,9 @@ const cargarPeliculas = async() => {
 		} else if(respuesta.status === 401){
 			console.log('Pusiste la llave mal');
 		} else if(respuesta.status === 404){
-			console.log('La pelicula que buscas no existe');
+			console.log(' pelicula que buscas no tengo ');
 		} else {
-			console.log('Hubo un error y no sabemos que paso');
+			console.log('error no sabemos que paso');
 		}
 
 	} catch(error){
