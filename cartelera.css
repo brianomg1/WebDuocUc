@@ -19,6 +19,7 @@ body {
 	gap: 40px;
 }
 
+
 .contenedor .pelicula {
 	text-align: center;
 }
@@ -78,3 +79,95 @@ body {
 	text-align: center;
 	padding: 100px;
 }
+
+  main{
+    text-align: center; 
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #search-input {
+    width: 500px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  
+  #movie-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .movie-result {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .movie-result img {
+    width: 90%;
+	max-width: 1000px;
+	margin: 40px auto 100px auto;
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 40px;
+  }
+  
+  .movie-result h3 {
+    margin-top: 10px;
+  }
+  
+  .movie-result p {
+    margin-bottom: 0;
+  }
+
+  .movie-result img {
+
+	font-size: 16px;
+	font-weight: 600;
+  }
+
+  .movie-result img{
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 15px;
+}
+
+
+button, input{
+    display: block;
+	text-align: center; 
+}
+
+
+button{
+    border: none;
+    padding: .5em 1em;
+    border-radius: 50px;
+    flex-basis: 25%;
+    max-width: 100px;
+    margin-left: 10px;
+    background-color:#3a3b42;
+    color:#f2e9e4;
+    transition: background-color .25s ease-in;
+	text-align: center; 
+}
+
+button:hover{
+    background-color: #ff0000;
+	
+}
+
+main{
+    padding-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
