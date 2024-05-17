@@ -1,21 +1,54 @@
+let pagina = 1;
+const Anterior = document.getElementById('Anterior');
+const Siguiente = document.getElementById('Siguiente');
+
+Siguiente.addEventListener('click', () => {
+	if(pagina < 1000){
+		pagina += 1;
+		cargarPeliculas();
+	}
+});
+
+Anterior.addEventListener('click', () => {
+	if(pagina > 1){
+		pagina -= 1;
+		cargarPeliculas();
+	}
+});
+
 const cargarPeliculas = async() => {
+	try {
+		const respuesta = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=192e0b9821564f26f52949758ea3c473&language=es-MX&page=${pagina}`);
+	
+		console.log(respuesta);
 
-    try{
+		if(respuesta.status === 200){
+			const datos = await respuesta.json();
+			
+			let peliculas = '';
+			datos.results.forEach(pelicula => {
+				peliculas += `
+					<div class="pelicula">
+						<img class="poster" src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}">
+						<h3 class="titulo">${pelicula.title}</h3>
+					</div>
+				`;
+			});
 
-        const respuesta = await fetch('https://api.themoviedb.org/3/movie/550?api_key=5dba216a4a48439eb21fa18dd4387501&language=es-MX');
+			document.getElementById('contenedor').innerHTML = peliculas;
 
-        console.log(respuesta);
+		} else if(respuesta.status === 401){
+			console.log('Pusiste la llave mal');
+		} else if(respuesta.status === 404){
+			console.log(' pelicula que buscas no tengo ');
+		} else {
+			console.log('error no sabemos que paso');
+		}
 
-        if(respuesta.status ===200){
-            const datos= await respuesta.json();
-            console.log(datos.title);
-        }
+	} catch(error){
+		console.log(error);
+	}
 
-    }catch(error){
-        console.log(error);
-    }
-   
 }
-
 
 cargarPeliculas();
