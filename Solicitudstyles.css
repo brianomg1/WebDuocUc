@@ -93,3 +93,10 @@ footer {
     text-align: center;
     padding: 45px;
 }
+
+
+#grad1 {
+    height: 40px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(rgb(36, 34, 34), rgb(226, 7, 7));
+  }
